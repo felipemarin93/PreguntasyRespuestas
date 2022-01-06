@@ -1,4 +1,6 @@
 # PreguntasyRespuestas
+Aplicación de preguntas y respuestas en Javascript,HTML,CSS con BD en MySQL usando clases y objetos para la programación con mejores practicas.
+
 Propuse desarrollar este reto de preguntas y respuestas con el lenguaje Javascript usando el paradigma de programación Orientada a Objetos, sin embargo la aplicación no quedó funcional completamente
 debido a que tuve prueblemas con la codificación de los eventos Listeners en el documento HTML para completar la lógica del programa.
 
