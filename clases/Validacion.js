@@ -1,4 +1,4 @@
-import {mostrarPreguntaNivel2} from './Pregunta.js'
+
 function miAlerta1() {
     let seleccionada = '1';
     console.log(seleccionada);
@@ -29,11 +29,11 @@ function validarRespuesta (respuesta){
     if (respuesta==='3'){
         alert('Has seleccionado la Respuesta correcta');
         
-        
+
         mostrarPreguntaNivel2();
 
     } else{
-        alert('Game over!! Has seleccionado la Respuesta incorrecta, no te llevas nada NO ENTRAS A SOFKA NI A LAS CANTERAS jejeje :D');
+        alert('Game over!! Has seleccionado la Respuesta incorrecta, ');
         
     }
 }
