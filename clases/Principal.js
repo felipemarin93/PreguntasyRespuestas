@@ -7,10 +7,10 @@ import { preguntasNivel1,preguntasNivel2,preguntasNivel3,preguntasNivel4,pregunt
 
 function main (){
     
-    /*
+    
     window.alert("'Bienvenid@ al concurso de preguntas y Respuestas, a continuación le haremos unas preguntas, si respondes de manera correcta irás acumulando puntos y dinero. Si resuelves los 5 niveles te llevas el acumulado, pero si te equivocas pierdes todo;")
     var nombreJugador = prompt("Antes de Iniciar, Cuentame cual es tu nombre");
-    */
+    
     const quiz = new Quiz(preguntas);
     const question = new Pregunta()
     

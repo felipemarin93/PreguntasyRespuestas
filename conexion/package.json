@@ -1,7 +1,8 @@
 {
-  "name": "preguntasyrespuestas",
+  "name": "conexion",
   "version": "1.0.0",
-  "main": "conexionMysql.js",
+  "description": "",
+  "main": "mysql.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,6 +11,5 @@
   "license": "ISC",
   "dependencies": {
     "mysql": "^2.18.1"
-  },
-  "description": ""
+  }
 }

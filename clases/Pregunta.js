@@ -25,16 +25,17 @@ export class Pregunta {
     respuestaCorrecta(opcion) {
         return opcion === this.respuesta;
     }
+    
 
-
+    
     //Mostrar preguntas Nivel 1 en la interfaz
     mostrarPreguntaNivel1() {
         let numeroAleatorio = Math.floor(Math.random() * (5 - 0)) + 0; //Crear número aleatorio
         const tituloPregunta = preguntasNivel1[numeroAleatorio].pregunta //Se asigna la pregunta de nivel 1 de la clase Pregunta
         document.getElementById('pregunta').innerText = tituloPregunta //Se asigna la pregunta seleccionada para que la muestre en la interfaz
-        
+
         const contenedorOpciones = document.getElementById('opciones')
-        
+
         const opciones = preguntasNivel1[numeroAleatorio].opciones
 
         console.log(opciones);
@@ -45,7 +46,7 @@ export class Pregunta {
             console.log(document.getElementById('btn' + numeroBoton))
             numeroBoton++;
         }
-        
+
 
         let nivel = "Nivel de dificultad: Muy Fácil";
         document.getElementById('progreso').innerText = nivel;
@@ -53,10 +54,11 @@ export class Pregunta {
         const respuestaCorrecta = preguntasNivel1[numeroAleatorio].respuesta
 
         
-        
+
     }
     //Mostrar preguntas Nivel 2 en la interfaz
     mostrarPreguntaNivel2() {
+        window.confirm("Deseas Continuar? Recuerda que si te equivocas pierdes todo");
         let numeroAleatorio = Math.floor(Math.random() * (5 - 0)) + 0;
         const tituloPregunta = preguntasNivel2[numeroAleatorio].pregunta
         document.getElementById('pregunta').innerText = tituloPregunta
@@ -76,6 +78,7 @@ export class Pregunta {
     }
     //Mostrar preguntas Nivel 3 en la interfaz
     mostrarPreguntaNivel3() {
+        window.confirm("Deseas Continuar? Recuerda que si te equivocas pierdes todo");
         let numeroAleatorio = Math.floor(Math.random() * (5 - 0)) + 0;
         const tituloPregunta = preguntasNivel3[numeroAleatorio].pregunta
         document.getElementById('pregunta').innerText = tituloPregunta
@@ -95,6 +98,7 @@ export class Pregunta {
     }
     //Mostrar preguntas Nivel 4 en la interfaz
     mostrarPreguntaNivel4() {
+        window.confirm("Deseas Continuar? Recuerda que si te equivocas pierdes todo");
         let numeroAleatorio = Math.floor(Math.random() * (5 - 0)) + 0;
         const tituloPregunta = preguntasNivel4[numeroAleatorio].pregunta
         document.getElementById('pregunta').innerText = tituloPregunta
@@ -112,6 +116,7 @@ export class Pregunta {
     }
     //Mostrar preguntas Nivel 5 en la interfaz
     mostrarPreguntaNivel5() {
+        window.confirm("Deseas Continuar? Recuerda que si te equivocas pierdes todo");
         let numeroAleatorio = Math.floor(Math.random() * (5 - 0)) + 0;
         const tituloPregunta = preguntasNivel5[numeroAleatorio].pregunta
         document.getElementById('pregunta').innerText = tituloPregunta
@@ -129,9 +134,5 @@ export class Pregunta {
         document.getElementById('progreso').innerText = nivel;
     }
 
-
-
-
+    
 }
-
-
