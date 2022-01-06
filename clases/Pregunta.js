@@ -1,4 +1,4 @@
-import {preguntasNivel1,preguntasNivel2,preguntasNivel3,preguntasNivel4,preguntasNivel5} from "./Constantes.js"
+import { preguntasNivel1, preguntasNivel2, preguntasNivel3, preguntasNivel4, preguntasNivel5 } from "./Constantes.js"
 
 export class Pregunta {
 
@@ -16,7 +16,7 @@ export class Pregunta {
     }*/
 
 
-   
+
     /**
      * 
      * @param {string} opcion Texto para seleccionar
@@ -25,99 +25,112 @@ export class Pregunta {
     respuestaCorrecta(opcion) {
         return opcion === this.respuesta;
     }
+
+
     //Mostrar preguntas Nivel 1 en la interfaz
-    mostrarPreguntaNivel1(){
-        let numeroAleatorio =  Math.floor(Math.random() * (5 - 0)) + 0; //Crear número aleatorio
+    mostrarPreguntaNivel1() {
+        let numeroAleatorio = Math.floor(Math.random() * (5 - 0)) + 0; //Crear número aleatorio
         const tituloPregunta = preguntasNivel1[numeroAleatorio].pregunta //Se asigna la pregunta de nivel 1 de la clase Pregunta
-        document.getElementById('pregunta').innerText = tituloPregunta        
+        document.getElementById('pregunta').innerText = tituloPregunta //Se asigna la pregunta seleccionada para que la muestre en la interfaz
+        
+        const contenedorOpciones = document.getElementById('opciones')
+        
         const opciones = preguntasNivel1[numeroAleatorio].opciones
+
         console.log(opciones);
-        let numeroBoton =1;
+        let numeroBoton = 1;
 
-        for (let index = 0; index < opciones.length; index++) {
-            document.getElementById('btn'+numeroBoton).innerText = opciones[index]
-            console.log(document.getElementById('btn'+numeroBoton))
-            numeroBoton++;
-        }
-
-        let nivel= "Muy Fácil";
-        document.getElementById('progreso').innerText = nivel;
-    }
-    //Mostrar preguntas Nivel 2 en la interfaz
-    mostrarPreguntaNivel2(){
-        let numeroAleatorio =  Math.floor(Math.random() * (5 - 0)) + 0;
-        const tituloPregunta = preguntasNivel2[numeroAleatorio].pregunta
-        document.getElementById('pregunta').innerText = tituloPregunta        
-        const opciones = preguntasNivel2[numeroAleatorio].opciones
-        console.log(opciones);
-        let numeroBoton =1;
-
-        for (let index = 0; index < opciones.length; index++) {
-            document.getElementById('btn'+numeroBoton).innerText = opciones[index]
-            console.log(document.getElementById('btn'+numeroBoton))
+        for (let i = 0; i < opciones.length; i++) {
+            document.getElementById('btn' + numeroBoton).innerText = opciones[i]
+            console.log(document.getElementById('btn' + numeroBoton))
             numeroBoton++;
         }
         
-        let nivel= "Nivel de dificultad:  Fácil";
+
+        let nivel = "Nivel de dificultad: Muy Fácil";
+        document.getElementById('progreso').innerText = nivel;
+
+        const respuestaCorrecta = preguntasNivel1[numeroAleatorio].respuesta
+
+        
+        
+    }
+    //Mostrar preguntas Nivel 2 en la interfaz
+    mostrarPreguntaNivel2() {
+        let numeroAleatorio = Math.floor(Math.random() * (5 - 0)) + 0;
+        const tituloPregunta = preguntasNivel2[numeroAleatorio].pregunta
+        document.getElementById('pregunta').innerText = tituloPregunta
+
+        const opciones = preguntasNivel2[numeroAleatorio].opciones
+        console.log(opciones);
+        let numeroBoton = 1;
+
+        for (let i = 0; i < opciones.length; i++) {
+            document.getElementById('btn' + numeroBoton).innerText = opciones[i]
+            console.log(document.getElementById('btn' + numeroBoton))
+            numeroBoton++;
+        }
+
+        let nivel = "Nivel de dificultad:  Fácil";
         document.getElementById('progreso').innerText = nivel;
     }
     //Mostrar preguntas Nivel 3 en la interfaz
-    mostrarPreguntaNivel3(){
-        let numeroAleatorio =  Math.floor(Math.random() * (5 - 0)) + 0;
+    mostrarPreguntaNivel3() {
+        let numeroAleatorio = Math.floor(Math.random() * (5 - 0)) + 0;
         const tituloPregunta = preguntasNivel3[numeroAleatorio].pregunta
-        document.getElementById('pregunta').innerText = tituloPregunta        
+        document.getElementById('pregunta').innerText = tituloPregunta
         const opciones = preguntasNivel3[numeroAleatorio].opciones
         console.log(opciones);
-        let numeroBoton =1;
+        let numeroBoton = 1;
 
-        for (let index = 0; index < opciones.length; index++) {
-            document.getElementById('btn'+numeroBoton).innerText = opciones[index]
-            console.log(document.getElementById('btn'+numeroBoton))
+        for (let i = 0; i < opciones.length; i++) {
+            document.getElementById('btn' + numeroBoton).innerText = opciones[i]
+            console.log(document.getElementById('btn' + numeroBoton))
             numeroBoton++;
         }
 
-        let nivel= "Nivel de dificultad:  Medio";
+        let nivel = "Nivel de dificultad:  Medio";
         document.getElementById('progreso').innerText = nivel;
-        
+
     }
     //Mostrar preguntas Nivel 4 en la interfaz
-    mostrarPreguntaNivel4(){
-        let numeroAleatorio =  Math.floor(Math.random() * (5 - 0)) + 0;
+    mostrarPreguntaNivel4() {
+        let numeroAleatorio = Math.floor(Math.random() * (5 - 0)) + 0;
         const tituloPregunta = preguntasNivel4[numeroAleatorio].pregunta
-        document.getElementById('pregunta').innerText = tituloPregunta        
+        document.getElementById('pregunta').innerText = tituloPregunta
         const opciones = preguntasNivel4[numeroAleatorio].opciones
         console.log(opciones);
-        let numeroBoton =1;
+        let numeroBoton = 1;
 
-        for (let index = 0; index < opciones.length; index++) {
-            document.getElementById('btn'+numeroBoton).innerText = opciones[index]
-            console.log(document.getElementById('btn'+numeroBoton))
+        for (let i = 0; i < opciones.length; i++) {
+            document.getElementById('btn' + numeroBoton).innerText = opciones[i]
+            console.log(document.getElementById('btn' + numeroBoton))
             numeroBoton++;
         }
-        let nivel= "Nivel de dificultad:  Difícil";
+        let nivel = "Nivel de dificultad:  Difícil";
         document.getElementById('progreso').innerText = nivel;
     }
     //Mostrar preguntas Nivel 5 en la interfaz
-    mostrarPreguntaNivel5(){
-        let numeroAleatorio =  Math.floor(Math.random() * (5 - 0)) + 0;
+    mostrarPreguntaNivel5() {
+        let numeroAleatorio = Math.floor(Math.random() * (5 - 0)) + 0;
         const tituloPregunta = preguntasNivel5[numeroAleatorio].pregunta
-        document.getElementById('pregunta').innerText = tituloPregunta        
+        document.getElementById('pregunta').innerText = tituloPregunta
         const opciones = preguntasNivel5[numeroAleatorio].opciones
         console.log(opciones);
-        let numeroBoton =1;
+        let numeroBoton = 1;
 
-        for (let index = 0; index < opciones.length; index++) {
-            document.getElementById('btn'+numeroBoton).innerText = opciones[index]
-            console.log(document.getElementById('btn'+numeroBoton))
+        for (let i = 0; i < opciones.length; i++) {
+            document.getElementById('btn' + numeroBoton).innerText = opciones[i]
+            console.log(document.getElementById('btn' + numeroBoton))
             numeroBoton++;
         }
-        
-        let nivel= "Nivel de dificultad:  Experto";
+
+        let nivel = "Nivel de dificultad:  Experto";
         document.getElementById('progreso').innerText = nivel;
     }
 
 
-    
+
 
 }
 

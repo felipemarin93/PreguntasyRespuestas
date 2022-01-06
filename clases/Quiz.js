@@ -24,7 +24,7 @@ export class Quiz {
         return this.preguntas[this.indicePregunta]
     }
     
-    aFinalizado(){
+    haFinalizado(){
         return this.preguntas.length === this.indicePregunta
     }
 
@@ -38,5 +38,13 @@ export class Quiz {
         }
         this.indicePregunta++;
     }
+
+  
+
+    
+
 }
+
+
+
 
