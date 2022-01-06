@@ -2,7 +2,7 @@
 
 import {Pregunta} from './Pregunta.js';
 
-export class Metodos {
+export class Quiz {
 
     indicePregunta = 0;
     puntajeJugador = 0;
@@ -23,6 +23,11 @@ export class Metodos {
     obtenerIndicePregunta() {
         return this.preguntas[this.indicePregunta]
     }
+    
+    aFinalizado(){
+        return this.preguntas.length === this.indicePregunta
+    }
+
     /**
      * 
      * @param {string} respuesta respuesta escogida por el jugador

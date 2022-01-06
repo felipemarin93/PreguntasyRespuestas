@@ -14,13 +14,13 @@ export const preguntasNivel1 = [
 
     {
         pregunta: "¿Cuántos minutos tiene una hora?",
-        opciones: ["Buenos Aires","Lima","Quito","Bogotá"],
-        respuesta: "Bogotá",
+        opciones: ["Sesenta","Doce","treinta","quince"],
+        respuesta: "Sesenta",
     },
     {
         pregunta: "¿Cuál es la capital de Colombia?",
-        opciones: ["Mercurio", "Venus", "Tierra", "Marte"],
-        respuesta: "Mercurio",
+        opciones: ["Bogotá", "Lima", "Quito", "Caracas"],
+        respuesta: "Bogotá",
     },
     {
         pregunta: "Es un sinónimo de rápido",
