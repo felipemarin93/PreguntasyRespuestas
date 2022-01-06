@@ -16,6 +16,11 @@ function main (){
     
     //Primera Ronda
     question.mostrarPreguntaNivel1()
+    question.mostrarPreguntaNivel2()
+    question.mostrarPreguntaNivel3()
+    question.mostrarPreguntaNivel4()
+    question.mostrarPreguntaNivel5()
+   
     
 
 

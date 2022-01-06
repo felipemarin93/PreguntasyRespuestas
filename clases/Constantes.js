@@ -1,14 +1,3 @@
-/*
-import { nombreJugador } from './Jugador.js';
-import { puntajeJugador } from './Jugador.js';
-import { dineroJugador } from './Jugador.js';
-
-
-export const mensajeBienvenida = 'Bienvenid@ al concurso de preguntas y Respuestas, a continuación le haremos unas preguntas a media que acierte la respuesta correcta irá acumulando puntos y dinero';
-export const continuaJugando = '¿Desea continuar Jugando o prefiere irse con el acumulado que tiene hasta el momento?';
-export const insertar = `INSERT INTO JUGADOR VALUES ('${nombreJugador}',${puntajeJugador},${dineroJugador})`;
-export const consultar = 'SELECT * FROM JUGADOR ORDER BY puntaje DESC';
-*/
 
 export const preguntasNivel1 = [
 

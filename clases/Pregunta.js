@@ -8,12 +8,13 @@ export class Pregunta {
      * @param {string[]} opciones Son la sopciones de la pregunta
      * @param {string} respuesta esta es la respuesta de la pregunta
      */
-
-    /*constructor(pregunta, opciones, respuesta) {
+    /*
+    constructor(pregunta, opciones, respuesta) {
         this.pregunta = pregunta;
         this.opciones = opciones;
         this.respuesta = respuesta;
-    }*/
+    }
+    */
 
 
 
