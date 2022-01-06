@@ -1,0 +1,52 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: rgb(223, 104, 6) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#formulario {
+    background: rgb(255, 255, 255);
+    width: 35rem;
+    padding: 4rem;
+    text-align: center;
+}
+
+h1 {
+    color: rgb(5, 5, 5);
+    font-size: 3rem;
+    text-align: center;
+    padding: 2px 0px;
+}
+
+#preguntas {
+    font-size: 1.5 rem;
+    color: rgb(5, 5, 5);
+}
+
+.boton {
+    background-color:rgb(184, 138, 23) ;
+    color: white;
+    width: 250px;
+    font-size: 20px;
+    border-radius: .3rem ;
+    padding: 10px 20px;
+    margin: 10px 40px 10px;
+    outline: 0;
+}
+
+.boton:hover {
+    cursor: pointer;
+    background:rgb(112, 80, 0) ;
+    ;
+}
+
+#progreso{
+    font-size: 15px;
+}
