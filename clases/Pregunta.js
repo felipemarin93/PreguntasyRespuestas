@@ -25,10 +25,10 @@ export class Pregunta {
     respuestaCorrecta(opcion) {
         return opcion === this.respuesta;
     }
-
+    //Mostrar preguntas Nivel 1 en la interfaz
     mostrarPreguntaNivel1(){
-        let numeroAleatorio =  Math.floor(Math.random() * (5 - 0)) + 0;
-        const tituloPregunta = preguntasNivel1[numeroAleatorio].pregunta
+        let numeroAleatorio =  Math.floor(Math.random() * (5 - 0)) + 0; //Crear número aleatorio
+        const tituloPregunta = preguntasNivel1[numeroAleatorio].pregunta //Se asigna la pregunta de nivel 1 de la clase Pregunta
         document.getElementById('pregunta').innerText = tituloPregunta        
         const opciones = preguntasNivel1[numeroAleatorio].opciones
         console.log(opciones);
@@ -39,14 +39,16 @@ export class Pregunta {
             console.log(document.getElementById('btn'+numeroBoton))
             numeroBoton++;
         }
-        
-    }
 
+        let nivel= "Muy Fácil";
+        document.getElementById('progreso').innerText = nivel;
+    }
+    //Mostrar preguntas Nivel 2 en la interfaz
     mostrarPreguntaNivel2(){
         let numeroAleatorio =  Math.floor(Math.random() * (5 - 0)) + 0;
-        const tituloPregunta = preguntasNivel1[numeroAleatorio].pregunta
+        const tituloPregunta = preguntasNivel2[numeroAleatorio].pregunta
         document.getElementById('pregunta').innerText = tituloPregunta        
-        const opciones = preguntasNivel1[numeroAleatorio].opciones
+        const opciones = preguntasNivel2[numeroAleatorio].opciones
         console.log(opciones);
         let numeroBoton =1;
 
@@ -56,13 +58,15 @@ export class Pregunta {
             numeroBoton++;
         }
         
+        let nivel= "Nivel de dificultad:  Fácil";
+        document.getElementById('progreso').innerText = nivel;
     }
-
+    //Mostrar preguntas Nivel 3 en la interfaz
     mostrarPreguntaNivel3(){
         let numeroAleatorio =  Math.floor(Math.random() * (5 - 0)) + 0;
-        const tituloPregunta = preguntasNivel1[numeroAleatorio].pregunta
+        const tituloPregunta = preguntasNivel3[numeroAleatorio].pregunta
         document.getElementById('pregunta').innerText = tituloPregunta        
-        const opciones = preguntasNivel1[numeroAleatorio].opciones
+        const opciones = preguntasNivel3[numeroAleatorio].opciones
         console.log(opciones);
         let numeroBoton =1;
 
@@ -71,14 +75,17 @@ export class Pregunta {
             console.log(document.getElementById('btn'+numeroBoton))
             numeroBoton++;
         }
+
+        let nivel= "Nivel de dificultad:  Medio";
+        document.getElementById('progreso').innerText = nivel;
         
     }
-
+    //Mostrar preguntas Nivel 4 en la interfaz
     mostrarPreguntaNivel4(){
         let numeroAleatorio =  Math.floor(Math.random() * (5 - 0)) + 0;
-        const tituloPregunta = preguntasNivel1[numeroAleatorio].pregunta
+        const tituloPregunta = preguntasNivel4[numeroAleatorio].pregunta
         document.getElementById('pregunta').innerText = tituloPregunta        
-        const opciones = preguntasNivel1[numeroAleatorio].opciones
+        const opciones = preguntasNivel4[numeroAleatorio].opciones
         console.log(opciones);
         let numeroBoton =1;
 
@@ -87,14 +94,15 @@ export class Pregunta {
             console.log(document.getElementById('btn'+numeroBoton))
             numeroBoton++;
         }
-        
+        let nivel= "Nivel de dificultad:  Difícil";
+        document.getElementById('progreso').innerText = nivel;
     }
-
+    //Mostrar preguntas Nivel 5 en la interfaz
     mostrarPreguntaNivel5(){
         let numeroAleatorio =  Math.floor(Math.random() * (5 - 0)) + 0;
-        const tituloPregunta = preguntasNivel1[numeroAleatorio].pregunta
+        const tituloPregunta = preguntasNivel5[numeroAleatorio].pregunta
         document.getElementById('pregunta').innerText = tituloPregunta        
-        const opciones = preguntasNivel1[numeroAleatorio].opciones
+        const opciones = preguntasNivel5[numeroAleatorio].opciones
         console.log(opciones);
         let numeroBoton =1;
 
@@ -104,6 +112,8 @@ export class Pregunta {
             numeroBoton++;
         }
         
+        let nivel= "Nivel de dificultad:  Experto";
+        document.getElementById('progreso').innerText = nivel;
     }
 
 

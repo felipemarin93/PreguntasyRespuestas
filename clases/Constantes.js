@@ -42,7 +42,7 @@ export const preguntasNivel1 = [
 export const preguntasNivel2 = [
 
     {
-        pregunta: "¿En qué ciudad y en qué país se encuentra la Torre Eiffel?",
+        pregunta: "¿En qué ciudad se encuentra la Torre Eiffel?",
         opciones: ["Roma","Venecia","Londres","Paris"],
         respuesta: "Paris",
     },
@@ -133,8 +133,8 @@ export const preguntasNivel5 = [
     },
     {
         pregunta: "¿Quién inventó el teléfono?",
-        opciones: ["Amazonas", "Mississippi", "Yang Tse Klang", "Nilo"],
-        respuesta: "Amazonas",
+        opciones: ["Isaac Newton", "Alexander Graham Bell", "Albert Einstein", "Nicola Tesla"],
+        respuesta: "Alexander Graham Bell",
     },
     {
         pregunta: "¿Cual es la moneda que tiene mas valor en el mundo?",
